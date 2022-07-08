@@ -165,15 +165,30 @@ class Selected_Items_Array {
               label="Followers 4"
               value="Followers 4" />
               </View>
-     
-            <TouchableHighlight underlayColor="#000" style={styles.selectedItemsButton} onPress={this.getSelectedItems}>
-     
-              <Text style={styles.selectedItemsButton_Text}>Get Selected Items</Text>
-     
-            </TouchableHighlight>
-     
-            <Text style={{ fontSize: 20, color: "#000", marginTop: 20 }}> {this.state.selectedItems} </Text>
-     
+
+              <View style={styles.chk}>
+              <Checkbox size={30}
+              keyValue={5}
+              selectedArrayObject={selectedArrayOBJ}
+              checked={true}
+              color="#000000"
+              labelColor="#ffffff"
+              label="Followers 5"
+              value="Followers 5" />
+              </View>
+
+              <View style={styles.chk}>
+              <Checkbox size={30}
+              keyValue={6}
+              selectedArrayObject={selectedArrayOBJ}
+              checked={true}
+              color="#000000"
+              labelColor="#ffffff"
+              label="Followers 6"
+              value="Followers 6" />
+              </View>
+            
+    
           </View>
         );
       }
@@ -188,7 +203,7 @@ class Selected_Items_Array {
       {
         // paddingTop: (Platform.OS === 'ios') ? 20 : 0,
         flex: 1,
-        padding: 20,
+        paddingHorizontal: 20,
         // justifyContent: 'center',
         // alignItems: 'center'
       },
@@ -240,7 +255,8 @@ class Selected_Items_Array {
         width:'100%',
         backgroundColor:'#808080',
         alignItems:'center',
-        marginTop:10
+        marginTop:10,
+        borderRadius:5
     }
   });
 
